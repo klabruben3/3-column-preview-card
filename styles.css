@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 800px;
+  width: 1440px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content :where(p, button) {
+  font-size: 15px;
+}
+
+.content h1 {
+  color: hsl(0, 0%, 95%);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content img {
+  margin-bottom: 10px;
+}
+
+.content p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.8;
+  margin-bottom: 70px;
+}
+
+/* The cards */
+.card {
+  height: 500px;
+  width: 307px;
+  padding: 48px;
+}
+
+.card.one {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.card.one button:nth-child(8) {
+  color: hsl(31, 77%, 52%);
+}
+
+.card.two {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card.two button:nth-child(8) {
+  color: hsl(184, 100%, 22%);
+}
+
+.card.three {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.card.three button:nth-child(8) {
+  color: hsl(179, 100%, 13%);
+}
+
+.card button {
+  background-color: hsl(0, 0%, 95%);
+  height: 40px;
+  width: 140px;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 22.5px;
+}
+
+.card button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%) !important;
+}
+
+@media (max-width: 921px) {
+  .container {
+    height: 1000px;
+  }
+
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .card.three {
+    border-radius: 10px;
+  }
+
+  .card.two {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+@media (max-width: 614px) {
+  .container {
+    height: 1500px;
+  }
+
+  .card.three {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .card.two {
+    border-radius: 0;
+  }
+
+  .card.one {
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    height: 1502px;
+    width: 326.96px;
+  }
+
+  .content {
+    scale: 1.065 0.884;
+  }
+}
